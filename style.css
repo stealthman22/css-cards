@@ -16,19 +16,18 @@ body {
 
 .profile-card {
     bottom: 30px;
-    width: 30rem;
-    height: 30rem;
+    width: 35rem;
+    height: 35rem;
     overflow: hidden;
     text-align: center;
     position: relative;
-    box-shadow: 0 0 10px #00000070;
+    box-shadow: 0 0 50px #00000070;
 }
 
 .top-section {
     height: 80%;
     padding: 1rem 0.7rem;
     background: #2c2c54aa;
-    margin-bottom: 0.3rem;
 }
 
 .message,
@@ -49,16 +48,18 @@ body {
 }
 
 .pic {
+    height: 15rem;
+    width: 15rem;
     margin: auto;
-    margin-bottom: 0.3rem;
-}
-
-.pic img {
+    padding-bottom: 1rem;
     border: 2px solid #2c3e50;
     border-radius: 50%;
     padding: 0.5rem;
     position: relative;
 }
+
+
+/* Special styles */
 
 .pic:after {
     content: "";
@@ -80,6 +81,12 @@ body {
     }
 }
 
+.pic img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
 .name {
     color: #f1f1f1;
     font-size: 18px;
@@ -93,15 +100,32 @@ body {
 }
 
 .bottom-section {
-    background: #f1f1f1;
-    padding: 1rem 0.8rem;
     position: relative;
+    background: #f1f1f1;
+    padding: 3rem 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+}
+
+.border {
+    width: 0.1rem;
+    height: 2.8rem;
+    background: #000;
+    margin: 0 0.8rem;
+}
+
+.bottom-section span {
+    font-size: 1rem;
+    display: block;
 }
 
 .social-media {
     position: absolute;
     width: 100%;
-    top: -3opx;
+    top: -30px;
     left: 0;
     z-index: 1;
 }
@@ -117,15 +141,20 @@ body {
     margin: 0 10px;
 }
 
-.social_media i:after {
+.social-media i:after {
     content: "";
     width: 100%;
     height: 100%;
     position: absolute;
-    border: 1px solid #2c3e50;
     left: 0;
     top: 0;
     box-sizing: border-box;
     border-radius: 50%;
-    animation: wave 1.5s infinite linear;
+    z-index: -1;
+    transition: 0.4s linear;
+}
+
+.social-media i:hover:after {
+    transform: scale(1.4);
+    opacity: 0;
 }
