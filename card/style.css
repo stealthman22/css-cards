@@ -7,7 +7,7 @@
 }
 
 body {
-    background: url(./img//apple-laptop-notebook-office-39284.jpg) no-repeat center center / cover;
+    background: url('./img/apple-laptop-notebook-office-39284.jpg') no-repeat center center / cover;
     min-height: 100vh;
     display: flex;
     align-items: center;
