@@ -30,7 +30,7 @@ body {
 
 .card-img {
     grid-area: image;
-    background: url('./img/developer_activity_bv83.svg') no-repeat center center / cover;
+    background: url('./img/developer_activity_bv83.svg') no-repeat center center /cover;
 }
 
 .card-txt {
@@ -63,7 +63,6 @@ body {
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
     background: rgb(255, 7, 110);
-    ;
 }
 
 .card-stats .stat {
